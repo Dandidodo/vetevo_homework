@@ -1,5 +1,7 @@
 {
   "name": "vetevo",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "ionic-angular"
 }
