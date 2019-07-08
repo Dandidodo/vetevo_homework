@@ -1,14 +1,39 @@
-import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { Component } from "@angular/core";
 
 @Component({
-  selector: 'page-home',
-  templateUrl: 'home.html'
+  selector: "app-home",
+  templateUrl: "home.html",
+  //styleUrls: ["home.scss"]
 })
 export class HomePage {
+  public items: any = [];
 
-  constructor(public navCtrl: NavController) {
-
+  constructor() {
+    this.items = [
+      { expanded: false },
+      { expanded: false },
+      { expanded: false },
+      { expanded: false },
+      { expanded: false },
+      { expanded: false },
+      { expanded: false },
+      { expanded: false },
+      { expanded: false }
+    ];
   }
 
+  expandItem(item): void {
+    if (item.expanded) {
+      item.expanded = false;
+    } else {
+      this.items.map(listItem => {
+        if (item == listItem) {
+          listItem.expanded = !listItem.expanded;
+        } else {
+          listItem.expanded = false;
+        }
+        return listItem;
+      });
+    }
+  }
 }
