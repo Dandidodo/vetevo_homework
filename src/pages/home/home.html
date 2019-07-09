@@ -1,37 +1,70 @@
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar style="color: white;">
     <ion-title>
-      Ionic Blank
+      Wurmtest
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <ion-card (click)="expandItem(item)" *ngFor="let item of items">
+  <ion-card no-lines (click)="expandItem(item)" *ngFor="let item of items">
     <ion-card-header>
-      <ion-card-title>My Neighbor Totoro</ion-card-title>
+      <ion-card-title><b>Lorem Ipsum</b></ion-card-title>
     </ion-card-header>
 
     <ion-card-content>
-      <app-expandable expandHeight="100px" [expanded]="item.expanded">
+      <app-expandable expandHeight="1000px" [expanded]="item.expanded">
         <p>
-          Hello there.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a enim erat. Vivamus gravida est vel est consectetur commodo. Nullam in euismod ligula. Nullam volutpat sapien et eleifend semper.
         </p>
-        <p>
-          Hello there.
-        </p>
-        <p>
-          Hello there.
-        </p>
-        <p>
-          Hello there.
-        </p>
-        <p>
-          Hello there.
-        </p>
-        <p>
-          Hello there.
-        </p>
+
+        <ion-row style="height: 20px"></ion-row>
+
+        <!-- Titel -->
+        <h2>The quick brown fox jumps over the lazy dog</h2>
+        
+        <!-- Lista med 3 listtiles -->
+        <ion-list no-lines>
+            <ion-item text-wrap>
+              <ion-icon name="star-outline" item-left ></ion-icon>
+              <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a enim erat. Vivamus gravida est vel est consectetur commodo. Nullam in euismod ligula. Nullam volutpat sapien et eleifend semper.
+              </p>
+            </ion-item>
+            <ion-item text-wrap>
+              <ion-icon name="american-football-outline" item-left></ion-icon>
+              <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a enim erat. 
+              </p>
+            </ion-item>
+            <ion-item text-wrap>
+              <ion-icon name="alarm-outline" item-left></ion-icon>
+              <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a enim erat. Vivamus gravida est vel est consectetur commodo. Nullam in euismod ligula. Nullam volutpat sapien et eleifend semper.
+              </p>
+            </ion-item>
+          </ion-list>
+          
+        <!-- kort 
+        titel
+        text ->
+        länk
+        -->
+        <!-- kort 
+        titel
+        text ->
+        länk
+        -->
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>Card Title</ion-card-title>
+          </ion-card-header>
+        
+          <ion-card-content>
+            Keep close to Nature's heart... and break clear away, once in awhile,
+            and climb a mountain or spend a week in the woods. Wash your spirit clean.
+          </ion-card-content>
+        </ion-card>
       </app-expandable>
     </ion-card-content>
   </ion-card>

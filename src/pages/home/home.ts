@@ -11,13 +11,6 @@ export class HomePage {
   constructor() {
     this.items = [
       { expanded: false },
-      { expanded: false },
-      { expanded: false },
-      { expanded: false },
-      { expanded: false },
-      { expanded: false },
-      { expanded: false },
-      { expanded: false },
       { expanded: false }
     ];
   }
