@@ -1,33 +1,48 @@
-page-home {
-    ion-card {
-        border: none !important;
-        box-shadow: none !important;
-    }
-
-    ion-toolbar {
-        z-index: 0;
-        background: white;
-        background-color: white;
-        color: white;
-    }
-
-    ion-label{
-        font-size: 12px;
-    }
-
-    ion-card, .card-ios, .card-md {
-        border: 0 !important;
+app-home {
+    ion-card.expandable{
         box-shadow: none !important;
         border: none !important;
-        border-style: none !important;
-        position: relative;
-        text-align: center;
-        // border-top: 3px solid colorofyourchosing
-      }
-      .card{
-        border: 0 !important;
-        box-shadow: none !important;
-        border: none !important;
-        border-style: none !important;
-      }
+    }
+
+    #rounded {
+        width: 100%;
+        -moz-border-radius: 50px;
+        -webkit-border-radius: 50px;
+        border-radius: 6px;
+        margin-bottom: 10px;  
+        border: 1px solid;
+        border-color: gray;
+    }
+
+    ion-col.inputLabels {
+        color: lightgray;
+    }
+
+    input[type=number]:after {
+        content: "$";
+    }
+
+    #cardLink{
+        color: teal;
+        margin-left: 15px;
+        margin-bottom: 10px;
+    }
+
+    #button{
+        background-color: teal;
+    }
+
+    #tabButton{
+        color: teal;
+        background-color: transparent;
+        font-size: 16px;
+    }
+
+    label.title-icon-footer{
+        font-size: 10px;
+    }
+
+    .item-md ion-icon[item-left] + .item-inner{
+        margin-left: 0px;
+    }
 }
